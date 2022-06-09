@@ -6,7 +6,7 @@ English | [简体中文](./README_cn.md)
 [Online Demo Tool](https://photo2pixel.co) |
 [Tutorial](#Tutorial)
 
-photo2pixel is an algorithm which is capable of converting photo into pixel art. There is an [online converter photo2pixel.co](https://photo2pixel.co)
+photo2pixel is an algorithm converting photo into pixel art. There is an [online converter photo2pixel.co](https://photo2pixel.co)
 . you can choose different combination of pixel size and edge threshold to get the best result.
 
 <img src="images/doc/mountain_8bit_style_pixel.png" style="max-width: 850px" alt="mountain 8bit style pixel art"/>
