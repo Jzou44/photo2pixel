@@ -12,9 +12,14 @@ photo2pixel is an algorithm converting photo into pixel art. There is an [online
 <img src="images/doc/mountain_8bit_style_pixel.png" style="max-width: 850px" alt="mountain 8bit style pixel art"/>
 <img src="images/doc/holy_temple_8bit_style_pixel.png" style="max-width: 850px" alt="holy temple 8bit style pixel art">
 
+## Prerequisites
+- python3
+- pytorch (for algorithm implementation)
+- pillow (for image file io)
+
 ## Tutorial
 ---
-photo2pixel is implemented with Pytorch, you can run it with command as follow:
+photo2pixel is implemented with Pytorch, you can run it with command as bellow:
 ```bash
 # use default param
 python convert.py --input ./images/example_input_mountain.jpg

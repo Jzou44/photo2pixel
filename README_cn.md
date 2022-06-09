@@ -12,6 +12,11 @@ photo2pixel是一个图片转像素风的算法。提供 [图片转像素风在�
 <img src="images/doc/mountain_8bit_style_pixel.png" style="max-width: 850px" alt="mountain 8bit style pixel art"/>
 <img src="images/doc/holy_temple_8bit_style_pixel.png" style="max-width: 850px" alt="holy temple 8bit style pixel art">
 
+## 运行环境
+- python3
+- pytorch
+- pillow
+
 ## 使用说明
 ---
 photo2pixel基于pytorch框架实现, 以命令行的方式在本地运行:
