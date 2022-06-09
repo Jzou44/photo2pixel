@@ -3,7 +3,7 @@
 ---
 English | [简体中文](./README_cn.md)
 
-[Online Demo Tool](https://photo2pixel.co) |
+[Online Tool](https://photo2pixel.co) |
 [Tutorial](#Tutorial)
 
 photo2pixel is an algorithm converting photo into pixel art. There is an [online converter photo2pixel.co](https://photo2pixel.co)
