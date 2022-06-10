@@ -7,12 +7,12 @@ from utils import img_common_util
 
 
 def convert():
-    parser = argparse.ArgumentParser(description='Description of your program')
-    parser.add_argument('--input', type=str, default="./images/example_input_mountain.jpg", help='Description for foo argument')
-    parser.add_argument('--output', type=str, default="./result.png", help='Description for foo argument')
-    parser.add_argument('-k', '--kernel_size', type=int, default=10, help='Description for foo argument')
-    parser.add_argument('-p', '--pixel_size', type=int, default=16, help='Description for bar argument')
-    parser.add_argument('-e', '--edge_thresh', type=int, default=100, help='Description for bar argument')
+    parser = argparse.ArgumentParser(description='algorithm converting photo to pixel art')
+    parser.add_argument('--input', type=str, default="./images/example_input_mountain.jpg", help='input image path')
+    parser.add_argument('--output', type=str, default="./result.png", help='output image path')
+    parser.add_argument('-k', '--kernel_size', type=int, default=10, help='larger kernel size means smooth color transition')
+    parser.add_argument('-p', '--pixel_size', type=int, default=16, help='individual pixel size')
+    parser.add_argument('-e', '--edge_thresh', type=int, default=100, help='lower edge threshold means more black line in edge region')
     args = parser.parse_args()
 
     img_input = Image.open(args.input)
