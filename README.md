@@ -4,6 +4,7 @@
 English | [简体中文](./README_cn.md)
 
 [Online Tool](https://photo2pixel.co) |
+[Colab](https://colab.research.google.com/drive/108np4teybhBXHKbPMZZ1fykDuUeF2aw8?usp=sharing) |
 [Tutorial](#Tutorial)
 
 photo2pixel is an algorithm converting photo into pixel art. There is an [online converter photo2pixel.co](https://photo2pixel.co)
@@ -19,7 +20,8 @@ photo2pixel is an algorithm converting photo into pixel art. There is an [online
 
 ## Tutorial
 ---
-photo2pixel is implemented with Pytorch, you can run it with command as bellow:
+photo2pixel is implemented with Pytorch, the simplest way to run it is [Colab](https://colab.research.google.com/drive/108np4teybhBXHKbPMZZ1fykDuUeF2aw8?usp=sharing),
+or you can run it with command as bellow:
 ```bash
 # use default param
 python convert.py --input ./images/example_input_mountain.jpg

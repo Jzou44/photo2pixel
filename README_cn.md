@@ -4,6 +4,7 @@
 [English](./README.md) | 简体中文
 
 [在线工具](https://photo2pixel.co/cn) |
+[Colab](https://colab.research.google.com/drive/108np4teybhBXHKbPMZZ1fykDuUeF2aw8?usp=sharing) |
 [使用说明](#使用说明)
 
 photo2pixel是一个图片转像素风的算法。提供 [图片转像素风在线工具 photo2pixel.co](https://photo2pixel.co/cn)
@@ -19,7 +20,7 @@ photo2pixel是一个图片转像素风的算法。提供 [图片转像素风在�
 
 ## 使用说明
 ---
-photo2pixel基于pytorch框架实现, 以命令行的方式在本地运行:
+photo2pixel基于pytorch框架实现, 最简洁的方式是在[Colab](https://colab.research.google.com/drive/108np4teybhBXHKbPMZZ1fykDuUeF2aw8?usp=sharing)中运行，或者以命令行的方式在本地运行:
 ```bash
 # use default param
 python convert.py --input ./images/example_input_mountain.jpg
