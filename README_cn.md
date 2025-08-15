@@ -7,7 +7,7 @@
 [Colab](https://colab.research.google.com/drive/108np4teybhBXHKbPMZZ1fykDuUeF2aw8?usp=sharing) |
 [使用说明](#使用说明)
 
-photo2pixel是一个图片转像素风的算法。提供 [图片转像素风在线工具 photo2pixel.co](https://photo2pixel.co/cn)
+photo2pixel是一个图片转像素风的算法。提供 [图片转像素风在线工具 pixelchemist.com](https://pixelchemist.com/)
 以方便使用。本算法可以选择不同的像素大小，边缘强度等风格选项组合以达到最好的效果。
 
 <img src="images/doc/mountain_8bit_style_pixel.png" style="max-width: 850px" alt="mountain 8bit style pixel art"/>
