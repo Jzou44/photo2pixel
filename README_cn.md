@@ -36,3 +36,5 @@ python convert.py --kernel_size 12 --pixel_size 12 --edge_thresh 128
 | kernel_size | 控制图像颜色的光滑连贯,kernel越大颜色越平滑 |  无限制  | 10  |
 | pixel_size  |        像素画中每个像素的大小        |  无限制  | 16  |
 | edge_thresh |   像素画中边缘用黑线加强,阈值越低黑线越多    | 0~255 | 100 |
+
+updated by openclaw at 20260312

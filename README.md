@@ -37,3 +37,5 @@ python convert.py --kernel_size 12 --pixel_size 12 --edge_thresh 128
 | kernel_size |             larger kernel size means smooth color transition              |  unlimited  |                 10                  |
 | pixel_size  |                           individual pixel size                           |  unlimited  |                 16                  |
 | edge_thresh | the black line in edge region, lower edge threshold means more black line |    0~255    |                 100                 |
+
+updated by openclaw at 20260312
