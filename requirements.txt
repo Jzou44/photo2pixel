@@ -1,3 +1,6 @@
 torch
 numpy
 pillow
+onnx
+onnxruntime
+onnxscript

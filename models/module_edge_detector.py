@@ -17,8 +17,7 @@ class EdgeDetectorModule(nn.Module):
             [-1, 0, 1]
         ], dtype=np.float32).reshape([1, 1, 3, 3])
         kernel_sobel_h = torch.from_numpy(kernel_sobel_h).reshape([1, 1, 3, 3]).repeat([3, 1, 1, 1])
-        self.conv_h = nn.Conv2d(3, 3, kernel_size=3, padding=0, groups=3, bias=False)
-        self.conv_h.weight = nn.Parameter(kernel_sobel_h)
+        self.register_buffer("kernel_sobel_h", kernel_sobel_h)
 
         kernel_sobel_v = np.array([
             [-1, -2, -1],
@@ -26,8 +25,7 @@ class EdgeDetectorModule(nn.Module):
             [1, 2, 1]
         ], dtype=np.float32).reshape([1, 1, 3, 3])
         kernel_sobel_v = torch.from_numpy(kernel_sobel_v).reshape([1, 1, 3, 3]).repeat([3, 1, 1, 1])
-        self.conv_v = nn.Conv2d(3, 3, kernel_size=3, padding=0, groups=3, bias=False)
-        self.conv_v.weight = nn.Parameter(kernel_sobel_v)
+        self.register_buffer("kernel_sobel_v", kernel_sobel_v)
 
     def forward(self, rgb, param_edge_thresh, param_edge_dilate):
         """
@@ -38,8 +36,8 @@ class EdgeDetectorModule(nn.Module):
         """
 
         rgb = self.pad(rgb)
-        edge_h = self.conv_h(rgb)
-        edge_w = self.conv_v(rgb)
+        edge_h = F.conv2d(rgb, self.kernel_sobel_h, groups=3)
+        edge_w = F.conv2d(rgb, self.kernel_sobel_v, groups=3)
         edge = torch.stack([torch.abs(edge_h), torch.abs(edge_w)], dim=1)
         edge = torch.max(edge, dim=1)[0]
 

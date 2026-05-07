@@ -17,6 +17,7 @@ photo2pixel is an algorithm converting photo into pixel art. There is an [online
 - python3
 - pytorch (for algorithm implementation)
 - pillow (for image file io)
+- onnx and onnxruntime (for single-file ONNX export/inference)
 
 ## Tutorial
 ---
@@ -29,6 +30,15 @@ python convert.py --input ./images/example_input_mountain.jpg
 # or use custom param
 python convert.py --kernel_size 12 --pixel_size 12 --edge_thresh 128
 ```
+
+Export one configurable ONNX file and reuse it for different settings:
+```bash
+python export_onnx.py --output ./photo2pixel.onnx
+python convert_onnx.py --model ./photo2pixel.onnx --kernel_size 12 --pixel_size 12 --edge_thresh 128
+python convert_onnx.py --model ./photo2pixel.onnx --kernel_size 25 --pixel_size 8 --edge_thresh 80
+```
+
+The exported ONNX file has runtime inputs for `kernel_size`, `pixel_size`, and `edge_thresh`, so one file can be reused across config combinations.
 
 | Parameter   |                                Description                                |    Range    |               Default               |
 |-------------|:-------------------------------------------------------------------------:|:-----------:|:-----------------------------------:|
